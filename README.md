@@ -1,5 +1,3 @@
-theme: Merlot
-
 # Neel_Portfolio
 Data Science Portfolio
 

@@ -1,5 +1,6 @@
 # Neel_Portfolio
 Data Science Portfolio
+theme: minima
 
 # [Project 1: Analyzing the Impact of Social Support on Depression using Causal Inference](https://github.com/nmehta32/Causality-between-support-and-depression)
 

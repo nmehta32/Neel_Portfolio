@@ -3,21 +3,21 @@
 ### Acadmic Projects
 
 ## [Analyzing the Impact of Social Support on Depression using Causal Inference](https://github.com/nmehta32/Causality-between-support-and-depression)
-#DR. ELENA ZHELEVA
+>DR. ELENA ZHELEVA
 
 This project is focused on understanding the impact of social support on individuals who have self-reported a diagnosis of depression on Twitter. Using natural language processing and machine learning techniques, we aimed to determine the causal effect of social support on depression through tweets. The project includes data scraping using the Twint and Tweepy libraries, data preprocessing, and the implementation of advanced machine learning models such as BERT and logistic regression for analysis. The results of the study showed an average treatment effect of 1.96, providing insight into the potential benefits of social support for individuals with depression.
 
 This project is an implementation of image captioning using CNN and LSTM with attention. The goal of the project is to generate a coherent sentence that describes the image. The dataset used for this project is Flicker8k, which has 8k images and each image in the dataset has 5 captions each.
 
 # [Automatic Image Captioning using CNN and LSTM with Attention](https://github.com/nmehta32/ImageCaptioningPytorch)
-#DR. RASHID ANSARI
+>DR. RASHID ANSARI
 
 The approach we take is to tokenize each word into unique numbers and store the relevant words in a custom vocabulary. We pad each batch of captions to have the same length. The model consists of two main blocks: the encoder-CNN and the decoder-RNN. The encoder is a ResNet-50 architecture, which encodes the image with RGB channels into smaller learned channels. The smaller encoded image contains all the useful features of the original image. The decoder is an LSTM with attention mechanism, which generates a sequence of words to form a coherent sentence describing the image.
 
 We implemented the model using PyTorch and achieved an accuracy of 92%. This project demonstrates the ability to use advanced data engineering techniques and machine learning models to solve real-world problems such as image captioning, which has practical applications in areas such as aiding the visually impaired, monitoring systems, and self-driving vehicles.
 
 # [Twitter Sentiment Analysis](https://github.com/nmehta32/Tweet-Sentiment-Analysis)
-#DR. BING LIU
+>DR. BING LIU
 
 This is a research paper on Twitter Sentiment Analysis during the 2012 election. The authors aim to build a machine learning model that can classify the sentiment of the tweets. The data is preprocessed to make it clean and ready for machine learning models. Several models are used such as Naive Bayes, SVM, LSTM, and BERT transformers. The models are compared using metrics such as precision, recall, and F-score. The best results were obtained using the SVM (RBF kernel) with an F-score of 0.63. The text cleaning process includes removing RTs, @, #, links, stemming/lemmatization, converting to lower case, cleaning non-letter characters, removing stop words and punctuation, decoding HTML to general text. The authors use k-fold cross-validation with k = 10 to determine the performance of the algorithms. The input to the models are feature vectors obtained using word embedding and TF-IDF.
 
@@ -38,7 +38,7 @@ Finally, the code writes the calculated probabilities to a text file 'NB_ probab
 
 
 # [Data Engineering Assignment using Yelp API](https://github.com/nmehta32/Data-Engineering-using-YELP-Api)
-#DR. DIANA DIAZ
+>DR. DIANA DIAZ
 
 <u>Part 1</u> contains several functions to extract information from the flight and airport datasets. The functions are as follows:
 
@@ -50,10 +50,11 @@ Finally, the code writes the calculated probabilities to a text file 'NB_ probab
 The code then filters the flights dataset for flights that departed 20 or more minutes later than scheduled by comparing sched_dep_time and actual_dep_time.
 
 <u>Part 2</u> is a web scraping and API access project. 
-1. The main function, retrieve_html, retrieves the raw HTML from a specified URL using the requests library.
-2. read_api_key, reads the API key from a text file.
-3. location_search_params creates the necessary parameters to make a search request to the Yelp API.
-4. api_get_request sends a GET request to the specified API endpoint using the provided headers and URL parameters and returns the response as a JSON. 
+
+    1. The main function, retrieve_html, retrieves the raw HTML from a specified URL using the requests library.
+    2. read_api_key, reads the API key from a text file.
+    3. location_search_params creates the necessary parameters to make a search request to the Yelp API.
+    4. api_get_request sends a GET request to the specified API endpoint using the provided headers and URL parameters and returns the response as a JSON. 
 
 With advanced web scraping techniques, we can programmatically retrieve and structure all the reviews for a single restaurant on Yelp. The code uses BeautifulSoup to parse the HTML, extract the reviews and the URL for the next page of reviews. The reviews are structured as a Python dictionary, providing a clean and organized data output. With the provided html_fetcher, we can retrieve all the reviews for a single restaurant with just its URL as input. The end result is a comprehensive list of dictionaries, containing all the relevant information from the reviews. This powerful solution transforms raw HTML data into meaningful insights, streamlining your data analysis process.
 

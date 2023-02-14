@@ -22,7 +22,7 @@ We implemented the model using PyTorch and achieved an accuracy of 92%. This pro
 This is a research paper on Twitter Sentiment Analysis during the 2012 election. The authors aim to build a machine learning model that can classify the sentiment of the tweets. The data is preprocessed to make it clean and ready for machine learning models. Several models are used such as Naive Bayes, SVM, LSTM, and BERT transformers. The models are compared using metrics such as precision, recall, and F-score. The best results were obtained using the SVM (RBF kernel) with an F-score of 0.63. The text cleaning process includes removing RTs, @, #, links, stemming/lemmatization, converting to lower case, cleaning non-letter characters, removing stop words and punctuation, decoding HTML to general text. The authors use k-fold cross-validation with k = 10 to determine the performance of the algorithms. The input to the models are feature vectors obtained using word embedding and TF-IDF.
 
 # [Naive Bayes Algorithm for Sentiment Analysis](https://github.com/nmehta32/NaiveBayes)
-#DR. BING LIU
+>DR. BING LIU
 
 This code is written in Python and implements the Naive Bayes classification algorithm.
 

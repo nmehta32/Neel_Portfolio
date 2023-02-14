@@ -26,7 +26,7 @@ Finally, the data frame is loaded into a SQLite database using the sqlalchemy li
 Overall, this code showcases a highly efficient and organized ETL process that makes use of powerful libraries and a custom-defined method for data validation. The use of a SQLite database ensures the persistence of the data, making it easily accessible for future analysis.
 
 
-# [Data Engineering Assignment using Yelp API - Prof. Diana Diaz] (https://github.com/nmehta32/Data-Engineering-using-YELP-Api)
+# [Data Engineering Assignment using Yelp API - Prof. Diana Diaz](https://github.com/nmehta32/Data-Engineering-using-YELP-Api)
 <u>Part 1</u> contains several functions to extract information from the flight and airport datasets. The functions are as follows:
 
     1. extract_hour(time): Extracts hour information from military time.

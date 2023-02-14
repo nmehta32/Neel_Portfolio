@@ -1,5 +1,4 @@
-# Neel_Portfolio
-Data Science Portfolio
+### WELCOME TO MY PORTFOLIO :)
 
 ## Acadmic Projects
 

@@ -1,4 +1,3 @@
-#### WELCOME TO MY PORTFOLIO :)
 
 ### Acadmic Projects
 

@@ -1,6 +1,6 @@
 ### Internship Project
 
-## [Increaing Digital Engagement for Speciality Patients At CVSHealth and other general suggestions] (https://github.com/nmehta32/Neel_Portfolio/raw/main/Digital%20Factory_%20CVS%20Specialty%20Findings%20Report%202022.docx.pdf)
+## [Increaing Digital Engagement for Speciality Patients At CVSHealth and other general suggestions](https://github.com/nmehta32/Neel_Portfolio/raw/main/Digital%20Factory_%20CVS%20Specialty%20Findings%20Report%202022.docx.pdf)
 
 Click the link above to download the findings document :)
 

@@ -6,11 +6,11 @@ Click the link above to download the findings document :)
 
 Quick summary:
 
-•	A longitudinal analysis of patient digital engagement was conducted using natural language processing (NLP) models to identify trends and correlations in patient notes data.
-•	Inbound billing calls were investigated, and drugs that generated a high volume of calls were identified, leading to potential improvements in billing processes and customer support.
-•	A study of patient email services used to receive refill notifications was conducted, and correlations with patient demographics, such as age, were identified.
-•	The model was reworked since orignal model had a lot of duplicate patients, which caused drastically different results
-•	Communication summary database tables were analyzed to identify duplicate inbound calls and potential solutions for reducing their frequency, resulting in potential cost savings of $2.4MM.
+    •	A longitudinal analysis of patient digital engagement was conducted using natural language processing (NLP) models to identify trends and correlations in patient notes data.
+    •	Inbound billing calls were investigated, and drugs that generated a high volume of calls were identified, leading to potential improvements in billing processes and customer support.
+    •	A study of patient email services used to receive refill notifications was conducted, and correlations with patient demographics, such as age, were identified.
+    •	The model was reworked since orignal model had a lot of duplicate patients, which caused drastically different results
+    •	Communication summary database tables were analyzed to identify duplicate inbound calls and potential solutions for reducing their frequency, resulting in potential cost savings of $2.4MM.
 
 
 

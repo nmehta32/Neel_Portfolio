@@ -1,3 +1,15 @@
+### Professional Projects
+## Sleepy Cell
+Part of a 2 person team that made an end-to-end production ready sleepy cell detection algorithm which was used by variety of teams to identify and reset Faulty cell sites 5000+ instances of faulty cell sites were successfully identified and immediately fixed by network operations causing a total savings of 3.5MM for Dish Network
+
+## Mobility Analysis
+Created a fully functioning website to identify user mobility in Houstan which tracked how users move per zip to zip basis with respect to their income class. First inhouse dashboard that when used allowed Dish to target locations with high user mobility to build the perfect cell site that will cover the most users in the least cost
+
+## Customer Experiance
+Worked on CPNI data to create data engineering ETL pipelines for customer experience tracking. Included gathering data from 5 different data sources from athena and snowflake, used AWS GLUE to trasform the data, Wrote a lot of custom SQL for text extraction. This allowed buisness to create customized dashboards on the true user expierence of Boost customoers. Custom Address extraction script that i created
+
+
+
 ### Internship Project
 
 ## [Increaing Digital Engagement for Speciality Patients At CVSHealth and other general suggestions](https://github.com/nmehta32/Neel_Portfolio/raw/main/Digital%20Factory_%20CVS%20Specialty%20Findings%20Report%202022.docx.pdf)
@@ -6,11 +18,10 @@ Click the link above to download the findings document :)
 
 Quick summary:
 
-    •	A longitudinal analysis of patient digital engagement was conducted using natural language processing (NLP) models to identify trends and correlations in patient notes data.
-    •	Inbound billing calls were investigated, and drugs that generated a high volume of calls were identified, leading to potential improvements in billing processes and customer support.
-    •	A study of patient email services used to receive refill notifications was conducted, and correlations with patient demographics, such as age, were identified.
-    •	The model was reworked since orignal model had a lot of duplicate patients, which caused drastically different results
-    •	Communication summary database tables were analyzed to identify duplicate inbound calls and potential solutions for reducing their frequency, resulting in potential cost savings of $2.4MM.
+A longitudinal analysis of patient digital engagement was conducted using natural language processing (NLP) models to identify trends and correlations in patient notes data.
+Inbound billing calls were investigated, and drugs that generated a high volume of calls were identified, leading to potential improvements in billing processes and customer support.
+A study of patient email services used to receive refill notifications was conducted, and correlations with patient demographics, such as age, were identified.
+Communication summary database tables were analyzed to identify duplicate inbound calls and potential solutions for reducing their frequency, resulting in potential cost savings of $2.4MM.
 
 
 
@@ -21,11 +32,11 @@ Quick summary:
 
 This project is focused on understanding the impact of social support on individuals who have self-reported a diagnosis of depression on Twitter. Using natural language processing and machine learning techniques, we aimed to determine the causal effect of social support on depression through tweets. The project includes data scraping using the Twint and Tweepy libraries, data preprocessing, and the implementation of advanced machine learning models such as BERT and logistic regression for analysis. The results of the study showed an average treatment effect of 1.96, providing insight into the potential benefits of social support for individuals with depression.
 
-This project is an implementation of image captioning using CNN and LSTM with attention. The goal of the project is to generate a coherent sentence that describes the image. The dataset used for this project is Flicker8k, which has 8k images and each image in the dataset has 5 captions each.
 
 # [Automatic Image Captioning using CNN and LSTM with Attention](https://github.com/nmehta32/ImageCaptioningPytorch)
 >DR. RASHID ANSARI
 
+This project is an implementation of image captioning using CNN and LSTM with attention. The goal of the project is to generate a coherent sentence that describes the image. The dataset used for this project is Flicker8k, which has 8k images and each image in the dataset has 5 captions each.
 The approach we take is to tokenize each word into unique numbers and store the relevant words in a custom vocabulary. We pad each batch of captions to have the same length. The model consists of two main blocks: the encoder-CNN and the decoder-RNN. The encoder is a ResNet-50 architecture, which encodes the image with RGB channels into smaller learned channels. The smaller encoded image contains all the useful features of the original image. The decoder is an LSTM with attention mechanism, which generates a sequence of words to form a coherent sentence describing the image.
 
 We implemented the model using PyTorch and achieved an accuracy of 92%. This project demonstrates the ability to use advanced data engineering techniques and machine learning models to solve real-world problems such as image captioning, which has practical applications in areas such as aiding the visually impaired, monitoring systems, and self-driving vehicles.

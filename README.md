@@ -1,12 +1,11 @@
 ### Professional Projects
-## Sleepy Cell
-Part of a 2 person team that made an end-to-end production ready sleepy cell detection algorithm which was used by variety of teams to identify and reset Faulty cell sites 5000+ instances of faulty cell sites were successfully identified and immediately fixed by network operations causing a total savings of 3.5MM for Dish Network
+## Sleepy Cell Detection Algorithm
+Developed an end-to-end production-ready sleepy cell detection algorithm. Successfully identified and reset 5,000+ faulty cell sites in real time, leveraging raw sensor data before aggregation, resulting in $3.5MM in cost savings for Dish Network.
+## User Mobility Dashboard
+Designed and implemented a fully functional website tracking user mobility across Houston by ZIP code and income class. This in-house dashboard enabled targeted cell site development, optimizing coverage and cost efficiency for Dish Network.
+## CPNI Data Engineering and ETL Pipelines
+Built robust ETL pipelines for customer experience tracking by integrating data from five sources using AWS Glue, Athena, and Snowflake. Developed custom SQL scripts for text and address extraction, empowering the business to create actionable dashboards for Boost Mobile customer insights.
 
-## Mobility Analysis
-Created a fully functioning website to identify user mobility in Houstan which tracked how users move per zip to zip basis with respect to their income class. First inhouse dashboard that when used allowed Dish to target locations with high user mobility to build the perfect cell site that will cover the most users in the least cost
-
-## Customer Experiance
-Worked on CPNI data to create data engineering ETL pipelines for customer experience tracking. Included gathering data from 5 different data sources from athena and snowflake, used AWS GLUE to trasform the data, Wrote a lot of custom SQL for text extraction. This allowed buisness to create customized dashboards on the true user expierence of Boost customoers. Custom Address extraction script that i created
 
 
 

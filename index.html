@@ -29,8 +29,14 @@
     <main>
         <div class="container">
             <section id="about">
-                <h2>About Me</h2>
-                <p>I am a results-oriented Data Analyst with a Master's degree in Computer Science from the University of Illinois. My expertise lies in building robust data pipelines, developing insightful analytics dashboards, and implementing machine learning models to solve complex problems. I am passionate about transforming raw data into actionable insights that create tangible business value.</p>
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>I am a results-oriented Data Analyst with a Master's degree in Computer Science from the University of Illinois. My expertise lies in building robust data pipelines, developing insightful analytics dashboards, and implementing machine learning models to solve complex problems. I am passionate about transforming raw data into actionable insights that create tangible business value.</p>
+                </div>
+                <div class="about-image">
+                    <!-- IMPORTANT: Replace 'profile.jpg' with the actual name of your photo file -->
+                    <img src="profile.jpg" alt="Neel Mehta">
+                </div>
             </section>
 
             <section id="projects">
@@ -42,41 +48,67 @@
                     <button class="filter-btn" data-filter="academic">Academic</button>
                 </div>
                 <div class="project-gallery">
-                    <div class="project-card" data-category="professional">
-                        <h3>Sleepy Cell Detection Algorithm</h3>
-                        <p>An end-to-end algorithm that identified and reset over 5,000 faulty cell sites in real-time, resulting in $3.5MM in cost savings for Dish Network.</p>
-                        <a href="#" class="project-link">Read More</a>
+                    <!-- Add all your projects here -->
+                    <div class="project-card" data-category="professional" data-title="Sleepy Cell Detection Algorithm" data-flow="Raw Sensor Data → PySpark Anomaly Detection → Identify Faulty Sites → Trigger Automated Reset → Performance Monitoring" data-cool="This was a real-time, automated system that fixed network issues before they impacted users, saving $3.5MM in operational costs.">
+                        <h3>Sleepy Cell Detection</h3>
+                        <p>An algorithm that identified & reset 5,000+ faulty cell sites, saving $3.5MM.</p>
                     </div>
-                    <div class="project-card" data-category="professional">
+                    <div class="project-card" data-category="professional" data-title="User Mobility Dashboard" data-flow="Subscriber Geo-Data → Streamlit & GeoJSON Visualization → Map by ZIP Code & Income → Identify Investment Hotspots → Guide 5G Tower Placement" data-cool="This wasn't just a map; it was a strategic tool that directly guided multi-million dollar infrastructure decisions for Dish's 5G network expansion.">
                         <h3>User Mobility Dashboard</h3>
-                        <p>A dashboard tracking user mobility across Houston, enabling targeted cell site development and optimizing network coverage and cost-efficiency.</p>
-                        <a href="#" class="project-link">Read More</a>
+                        <p>A dashboard to guide 5G network expansion by visualizing user movement.</p>
                     </div>
-                    <div class="project-card" data-category="internship">
-                        <h3>Increasing Digital Engagement at CVS Health</h3>
-                        <p>A deep-dive analysis into patient digital engagement using NLP, identifying a potential $2.4MM in annual cost savings.</p>
-                        <a href="https://github.com/nmehta32/Neel_Portfolio/raw/main/Digital%20Factory_%20CVS%20Specialty%20Findings%20Report%202022.docx.pdf" class="project-link" target="_blank">View Findings Report</a>
+                    <div class="project-card" data-category="professional" data-title="CPNI Data Engineering & ETL Pipelines" data-flow="5 Data Sources (Vendor, Geo, Device, etc.) → AWS Glue & Athena ETL → Custom SQL for Text Extraction → Snowflake Data Warehouse → Actionable Business Dashboards" data-cool="I wrangled data from five disparate sources into a single, unified view, empowering the business team to finally understand the complete customer journey.">
+                        <h3>Customer Data & ETL Pipelines</h3>
+                        <p>Built robust ETL pipelines integrating 5 sources for customer experience tracking.</p>
                     </div>
-                    <div class="project-card" data-category="academic">
-                        <h3>Social Support and Depression on Twitter</h3>
-                        <p>A causal inference study using NLP and machine learning to analyze the impact of social support on individuals with depression on Twitter.</p>
+                    <div class="project-card" data-category="internship" data-title="Increasing Digital Engagement at CVS Health" data-flow="Patient Notes Data → NLP Topic Modeling → Analyze Billing Call Data → Correlate Email Provider with Demographics → Identify Duplicate Calls → Propose Process Optimization" data-cool="By analyzing unstructured text and call logs, I uncovered a massive $2.4MM potential cost savings opportunity, proving the value of data in operational efficiency.">
+                        <h3>CVS Health Digital Engagement</h3>
+                        <p>An analysis using NLP to identify a potential $2.4MM in annual cost savings.</p>
+                        <a href="https://github.com/nmehta32/Neel_Portfolio/raw/main/Digital%20Factory_%20CVS%20Specialty%20Findings%20Report%202022.docx.pdf" class="project-link" target="_blank">View Report</a>
+                    </div>
+                    <div class="project-card" data-category="academic" data-title="Causal Inference on Social Support & Depression" data-flow="Scrape Twitter Data (Tweepy) → Preprocess Text Data (NLP) → Implement BERT & Logistic Regression → Calculate Average Treatment Effect (1.96) → Analyze Causal Impact" data-cool="This project went beyond simple correlation to explore actual causation, using cutting-edge ML models to statistically investigate the real-world impact of social support on mental health.">
+                        <h3>Social Support & Depression Analysis</h3>
+                        <p>A causal inference study on the impact of social support on Twitter.</p>
                         <a href="https://github.com/nmehta32/Causality-between-support-and-depression" class="project-link" target="_blank">View on GitHub</a>
                     </div>
-                    <div class="project-card" data-category="academic">
-                        <h3>Automatic Image Captioning with AI</h3>
-                        <p>An implementation of an image captioning model using CNN and LSTM with attention, achieving 92% accuracy.</p>
+                    <div class="project-card" data-category="academic" data-title="Automatic Image Captioning with AI" data-flow="Input Image → ResNet-50 CNN (Encoder) → Extract Image Features → Attention Mechanism → LSTM (Decoder) → Generate Word-by-Word Caption" data-cool="It combines a CNN (for 'seeing') and an LSTM (for 'writing') to mimic human-like image understanding, achieving 92% accuracy in generating descriptive captions.">
+                        <h3>Automatic Image Captioning</h3>
+                        <p>An AI model that generates descriptive captions for images with 92% accuracy.</p>
                         <a href="https://github.com/nmehta32/ImageCaptioningPytorch" class="project-link" target="_blank">View on GitHub</a>
+                    </div>
+                    <div class="project-card" data-category="academic" data-title="Twitter Sentiment Analysis" data-flow="2012 Election Tweets → Advanced Text Cleaning → Feature Vectorization (TF-IDF) → Train Models (SVM, Naive Bayes, etc.) → K-Fold Cross-Validation → Compare F-Scores" data-cool="A classic NLP project where the heavy lifting of meticulous text cleaning and feature engineering was key to achieving the best sentiment classification results.">
+                        <h3>Twitter Sentiment Analysis</h3>
+                        <p>Classifying tweet sentiment from the 2012 election using various ML models.</p>
+                        <a href="https://github.com/nmehta32/Tweet-Sentiment-Analysis" class="project-link" target="_blank">View on GitHub</a>
+                    </div>
+                    <div class="project-card" data-category="academic" data-title="Spotify ETL Project" data-flow="Spotify API Call → Extract 'Recently Played' Data → Python (Pandas) for Transformation → Data Validation Checks → Load into SQLite Database (SQLAlchemy)" data-cool="This is a complete, end-to-end data engineering project in miniature, showcasing the entire ETL process from API extraction to persistent database storage.">
+                        <h3>Spotify ETL Pipeline</h3>
+                        <p>An ETL process to extract, transform, and load Spotify data for analytics.</p>
+                        <a href="https://github.com/nmehta32/SpotifyETL" class="project-link" target="_blank">View on GitHub</a>
                     </div>
                 </div>
             </section>
 
-            <section id="contact">
+             <section id="contact">
                 <h2>Let's Connect</h2>
                 <p>I'm always excited to discuss new projects and opportunities in the world of data. Feel free to reach out!</p>
                 <a href="mailto:neelmehta2019@gmail.com" class="btn">Email Me</a>
             </section>
         </div>
     </main>
+
+    <!-- The Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <h4>Workflow</h4>
+            <div id="modalFlow" class="flowchart"></div>
+            <h4>What's Cool About This</h4>
+            <p id="modalCool"></p>
+        </div>
+    </div>
+
 </body>
 <script src="script.js"></script>
 </html>

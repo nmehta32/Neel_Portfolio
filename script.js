@@ -2,66 +2,69 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Project Filtering Logic ---
     const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
+    const projectGallery = document.querySelector('.project-gallery');
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
+    if (filterButtons.length > 0 && projectGallery) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const filter = button.dataset.filter;
+                const projectCards = projectGallery.querySelectorAll('.project-card');
 
-            const filter = button.dataset.filter;
-            projectCards.forEach(card => {
-                if (filter === 'all' || card.dataset.category === filter) {
-                    card.style.display = 'flex'; // Use flex to maintain layout
-                } else {
-                    card.style.display = 'none';
-                }
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
             });
         });
-    });
-
-    // --- Modal Logic ---
-    const modal = document.getElementById('projectModal');
-    const modalTitle = document.getElementById('modalTitle');
-    const modalFlow = document.getElementById('modalFlow');
-    const modalCool = document.getElementById('modalCool');
-    const closeButton = document.querySelector('.close-button');
-
-    projectCards.forEach(card => {
-        card.addEventListener('click', (e) => {
-            // Don't open modal if the GitHub/Report link is clicked
-            if (e.target.classList.contains('project-link')) {
-                return;
-            }
-
-            // Populate and show the modal
-            modalTitle.textContent = card.dataset.title;
-            modalFlow.textContent = card.dataset.flow;
-            modalCool.textContent = card.dataset.cool;
-            modal.style.display = 'block';
-        });
-    });
-
-    // Function to close the modal
-    const closeModal = () => {
-        modal.style.display = 'none';
     }
 
-    // Event listeners to close the modal
-    closeButton.addEventListener('click', closeModal);
-    window.addEventListener('click', (e) => {
-        if (e.target == modal) {
-            closeModal();
+    // --- Modal Logic (REVISED AND FIXED) ---
+    const modal = document.getElementById('projectModal');
+    if (modal) {
+        const modalTitle = document.getElementById('modalTitle');
+        const modalFlow = document.getElementById('modalFlow');
+        const modalCool = document.getElementById('modalCool');
+        const closeButton = modal.querySelector('.close-button');
+
+        // Use event delegation on the gallery for robustness
+        projectGallery.addEventListener('click', (e) => {
+            const card = e.target.closest('.project-card');
+            
+            // If a card was clicked and it wasn't a link inside the card
+            if (card && !e.target.matches('a, a *')) {
+                modalTitle.textContent = card.dataset.title || 'No Title';
+                modalFlow.textContent = card.dataset.flow || 'No workflow specified.';
+                modalCool.textContent = card.dataset.cool || 'No details provided.';
+                modal.style.display = 'block';
+            }
+        });
+
+        const closeModal = () => {
+            modal.style.display = 'none';
         }
-    });
+
+        closeButton.addEventListener('click', closeModal);
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    }
 
     // --- Smooth Scrolling for Navigation ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const targetElement = document.querySelector(this.getAttribute('href'));
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
         });
     });
 });

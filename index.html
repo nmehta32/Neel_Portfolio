@@ -11,8 +11,8 @@
         <div class="container">
             <a href="#hero" class="nav-logo">Neel Mehta</a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -20,25 +20,20 @@
 
     <header id="hero">
         <div class="container">
-            <h1>Data-Driven Solutions, Creatively Engineered</h1>
-            <p>I transform complex data into compelling stories and intelligent solutions.</p>
-            <a href="#projects" class="btn">Explore My Work</a>
+            <div class="hero-text">
+                <h1>Data-Driven Solutions, Creatively Engineered</h1>
+                <p>I transform complex data into compelling stories and intelligent solutions.</p>
+                <a href="#projects" class="btn">Explore My Work</a>
+            </div>
+            <!-- Your photo is now here, positioned with CSS -->
+            <div class="hero-image">
+                <img src="profile.jpg" alt="Neel Mehta">
+            </div>
         </div>
     </header>
 
     <main>
         <div class="container">
-            <section id="about">
-                <div class="about-content">
-                    <h2>About Me</h2>
-                    <p>I am a results-oriented Data Analyst with a Master's degree in Computer Science from the University of Illinois. My expertise lies in building robust data pipelines, developing insightful analytics dashboards, and implementing machine learning models to solve complex problems. I am passionate about transforming raw data into actionable insights that create tangible business value.</p>
-                </div>
-                <div class="about-image">
-                    <!-- IMPORTANT: Replace 'profile.jpg' with the actual name of your photo file -->
-                    <img src="profile.jpg" alt="Neel Mehta">
-                </div>
-            </section>
-
             <section id="projects">
                 <h2>Projects</h2>
                 <div class="filter-buttons">
@@ -48,7 +43,7 @@
                     <button class="filter-btn" data-filter="academic">Academic</button>
                 </div>
                 <div class="project-gallery">
-                    <!-- Add all your projects here -->
+                    <!-- Professional Projects -->
                     <div class="project-card" data-category="professional" data-title="Sleepy Cell Detection Algorithm" data-flow="Raw Sensor Data → PySpark Anomaly Detection → Identify Faulty Sites → Trigger Automated Reset → Performance Monitoring" data-cool="This was a real-time, automated system that fixed network issues before they impacted users, saving $3.5MM in operational costs.">
                         <h3>Sleepy Cell Detection</h3>
                         <p>An algorithm that identified & reset 5,000+ faulty cell sites, saving $3.5MM.</p>
@@ -61,11 +56,15 @@
                         <h3>Customer Data & ETL Pipelines</h3>
                         <p>Built robust ETL pipelines integrating 5 sources for customer experience tracking.</p>
                     </div>
+
+                    <!-- Internship Project -->
                     <div class="project-card" data-category="internship" data-title="Increasing Digital Engagement at CVS Health" data-flow="Patient Notes Data → NLP Topic Modeling → Analyze Billing Call Data → Correlate Email Provider with Demographics → Identify Duplicate Calls → Propose Process Optimization" data-cool="By analyzing unstructured text and call logs, I uncovered a massive $2.4MM potential cost savings opportunity, proving the value of data in operational efficiency.">
                         <h3>CVS Health Digital Engagement</h3>
                         <p>An analysis using NLP to identify a potential $2.4MM in annual cost savings.</p>
                         <a href="https://github.com/nmehta32/Neel_Portfolio/raw/main/Digital%20Factory_%20CVS%20Specialty%20Findings%20Report%202022.docx.pdf" class="project-link" target="_blank">View Report</a>
                     </div>
+                    
+                    <!-- Academic Projects -->
                     <div class="project-card" data-category="academic" data-title="Causal Inference on Social Support & Depression" data-flow="Scrape Twitter Data (Tweepy) → Preprocess Text Data (NLP) → Implement BERT & Logistic Regression → Calculate Average Treatment Effect (1.96) → Analyze Causal Impact" data-cool="This project went beyond simple correlation to explore actual causation, using cutting-edge ML models to statistically investigate the real-world impact of social support on mental health.">
                         <h3>Social Support & Depression Analysis</h3>
                         <p>A causal inference study on the impact of social support on Twitter.</p>
@@ -89,13 +88,20 @@
                 </div>
             </section>
 
-             <section id="contact">
-                <h2>Let's Connect</h2>
-                <p>I'm always excited to discuss new projects and opportunities in the world of data. Feel free to reach out!</p>
-                <a href="mailto:neelmehta2019@gmail.com" class="btn">Email Me</a>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am a results-oriented Data Analyst with a Master's degree in Computer Science from the University of Illinois. My expertise lies in building robust data pipelines, developing insightful analytics dashboards, and implementing machine learning models to solve complex problems. I am passionate about transforming raw data into actionable insights that create tangible business value.</p>
             </section>
         </div>
     </main>
+
+    <footer id="contact">
+        <p>
+            Let's connect: 
+            <a href="mailto:neelmehta2019@gmail.com">neelmehta2019@gmail.com</a> | 
+            <a href="https://www.linkedin.com/in/neel-mehta-a75844306/" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
 
     <!-- The Modal -->
     <div id="projectModal" class="modal">
@@ -109,6 +115,6 @@
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

@@ -3,63 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neel Mehta - Data Analyst</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Neel Mehta - Data Innovator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Neel Mehta</h1>
-            <p>Data Analyst | Data Engineer</p>
-            <div class="contact-info">
-                <a href="mailto:neelmehta2019@gmail.com">Email</a> |
-                <a href="https://github.com/nmehta32" target="_blank">GitHub</a> |
-                <a href="https://www.linkedin.com/in/neel-mehta-datascience/" target="_blank">LinkedIn</a>
-            </div>
-        </header>
+    <nav>
+        <div class="container">
+            <a href="#hero" class="nav-logo">Neel Mehta</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a results-oriented Data Analyst with a Master's in Computer Science. My expertise lies in building robust data pipelines, developing insightful analytics dashboards, and implementing machine learning models to solve complex problems. I am passionate about transforming raw data into actionable insights that create tangible business value.</p>
-        </section>
+    <header id="hero">
+        <div class="container">
+            <h1>Data-Driven Solutions, Creatively Engineered</h1>
+            <p>I transform complex data into compelling stories and intelligent solutions.</p>
+            <a href="#projects" class="btn">Explore My Work</a>
+        </div>
+    </header>
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill">Python</div>
-                <div class="skill">SQL</div>
-                <div class="skill">PySpark</div>
-                <div class="skill">AWS</div>
-                <div class="skill">Snowflake</div>
-                <div class="skill">Tableau</div>
-                <div class="skill">Docker</div>
-                <div class="skill">Airflow</div>
-            </div>
-        </section>
+    <main>
+        <div class="container">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am a results-oriented Data Analyst with a Master's degree in Computer Science from the University of Illinois. My expertise lies in building robust data pipelines, developing insightful analytics dashboards, and implementing machine learning models to solve complex problems. I am passionate about transforming raw data into actionable insights that create tangible business value.</p>
+            </section>
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-card">
-                <h3>Automated Sleepy Cell Site Recovery</h3>
-                <p>Built an anomaly detection system using PySpark to identify and reset over 5,000 underperforming cell sites, resulting in $3.5MM in cost savings for Dish Network.</p>
-                <a href="https://github.com/nmehta32" class="project-link">View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <h3>5G Network Expansion Strategy</h3>
-                <p>Developed a mobility analysis dashboard using Streamlit and GeoJSON to identify optimal locations for 5G tower placement in the Houston market.</p>
-                 <a href="https://github.com/nmehta32" class="project-link">View on GitHub</a>
-            </div>
-             <div class="project-card">
-                <h3>Spotify ETL Pipeline</h3>
-                <p>An efficient ETL process to extract, transform, and load Spotify data using Python, pandas, and sqlalchemy for analytics.</p>
-                 <a href="https://github.com/nmehta32/SpotifyETL" class="project-link">View on GitHub</a>
-            </div>
-        </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="professional">Professional</button>
+                    <button class="filter-btn" data-filter="internship">Internship</button>
+                    <button class="filter-btn" data-filter="academic">Academic</button>
+                </div>
+                <div class="project-gallery">
+                    <div class="project-card" data-category="professional">
+                        <h3>Sleepy Cell Detection Algorithm</h3>
+                        <p>An end-to-end algorithm that identified and reset over 5,000 faulty cell sites in real-time, resulting in $3.5MM in cost savings for Dish Network.</p>
+                        <a href="#" class="project-link">Read More</a>
+                    </div>
+                    <div class="project-card" data-category="professional">
+                        <h3>User Mobility Dashboard</h3>
+                        <p>A dashboard tracking user mobility across Houston, enabling targeted cell site development and optimizing network coverage and cost-efficiency.</p>
+                        <a href="#" class="project-link">Read More</a>
+                    </div>
+                    <div class="project-card" data-category="internship">
+                        <h3>Increasing Digital Engagement at CVS Health</h3>
+                        <p>A deep-dive analysis into patient digital engagement using NLP, identifying a potential $2.4MM in annual cost savings.</p>
+                        <a href="https://github.com/nmehta32/Neel_Portfolio/raw/main/Digital%20Factory_%20CVS%20Specialty%20Findings%20Report%202022.docx.pdf" class="project-link" target="_blank">View Findings Report</a>
+                    </div>
+                    <div class="project-card" data-category="academic">
+                        <h3>Social Support and Depression on Twitter</h3>
+                        <p>A causal inference study using NLP and machine learning to analyze the impact of social support on individuals with depression on Twitter.</p>
+                        <a href="https://github.com/nmehta32/Causality-between-support-and-depression" class="project-link" target="_blank">View on GitHub</a>
+                    </div>
+                    <div class="project-card" data-category="academic">
+                        <h3>Automatic Image Captioning with AI</h3>
+                        <p>An implementation of an image captioning model using CNN and LSTM with attention, achieving 92% accuracy.</p>
+                        <a href="https://github.com/nmehta32/ImageCaptioningPytorch" class="project-link" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </section>
 
-        <footer>
-            <p>&copy; 2025 Neel Mehta</p>
-        </footer>
-    </div>
+            <section id="contact">
+                <h2>Let's Connect</h2>
+                <p>I'm always excited to discuss new projects and opportunities in the world of data. Feel free to reach out!</p>
+                <a href="mailto:neelmehta2019@gmail.com" class="btn">Email Me</a>
+            </section>
+        </div>
+    </main>
 </body>
+<script src="script.js"></script>
 </html>
